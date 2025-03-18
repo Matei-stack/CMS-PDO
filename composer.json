@@ -1,0 +1,17 @@
+{
+  "name": "your/project-name",
+  "description": "A CMS Application using OOP, PDO, and SQL",
+  "require": {
+    "php": "^7.4 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "YourNamespace\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r 'copy(\".env.example\", \".env\");'"
+    ]
+  }
+}
